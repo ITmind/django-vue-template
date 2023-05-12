@@ -1,0 +1,11 @@
+.venv
+.git
+.gitignore
+.dockerignore
+docker-compose.yml
+Dockerfile
+vue_app
+data
+.idea
+venv
+Readme.MD
