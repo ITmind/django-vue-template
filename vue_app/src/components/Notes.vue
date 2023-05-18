@@ -76,9 +76,7 @@ function add() {
 </script>
 
 <template>
-
     <h3>Заметки</h3>
-
     <table>
         <thead>
         <tr>
@@ -106,10 +104,8 @@ function add() {
         </tbody>
     </table>
 
-
     <input v-if="currentNote.edit" class="note editable" v-model="currentNote.note">
     <div v-else class="note noteditable">{{ currentNote.note }}</div>
-
 </template>
 
 <style>

@@ -6,11 +6,13 @@ export default defineConfig({
   plugins: [vue()],
   // параметр base определят директорию прямой ссылки на статические файлы (используется при разыменовывании относительных ссылок в скриптах)
   base: "/static/spa",
+  //для отладки
   mode: "development",
   build: {
+    //Для отладки
     sourcemap: true,
     //сюда будем выкладывать артефакты
-    outDir: "../static/spa",
+    outDir: "./dist/spa",
     //сюда картинки и прочее midia
     assetsDir: './assets',
 
@@ -23,5 +25,4 @@ export default defineConfig({
       },
     },
   }
-
 })
